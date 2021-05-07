@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_project, only: %i[ show edit update destroy ]
 
   # GET /projects or /projects.json
@@ -18,7 +19,6 @@ class ProjectsController < ApplicationController
   # GET /projects/1/edit
   def edit
   end
-
   # POST /projects or /projects.json
   def create
     @project = Project.new(project_params)

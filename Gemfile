@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 
 
 gem 'mini_racer'
+
+gem 'devise'
   
 group :development, :test do
   gem 'capybara'
