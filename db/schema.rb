@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_07_215848) do
+ActiveRecord::Schema.define(version: 2021_05_08_004914) do
 
   create_table "projects", force: :cascade do |t|
     t.string "title"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_05_07_215848) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "banner_image_url"
   end
 
   create_table "users", force: :cascade do |t|
